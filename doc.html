@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Формы во Vue.js</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+<div id="app" class="col-md-4">
+	   <button v-on:click="tt">click</button>
+     
+     <img v-if="hide" src='https://avatars.mds.yandex.net/get-zen_doc/60808/pub_5d272d9efe289100ac7ef260_5d273157a2d6ed00ad7ab9f1/scale_1200' >
+	
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+	const app = new Vue({
+    	el: '#app',
+    	data: {
+        	show:false,
+          hide:true
+    	},
+      methods: {
+        tt: function(){
+            this.hide = !this.hide
+            
+        }
+      }
+	});
+  
+</script>
+</body>
+</html>

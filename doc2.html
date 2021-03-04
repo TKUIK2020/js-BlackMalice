@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Формы во Vue.js</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+<body>
+
+
+
+<div id="app" class="col-md-4">
+	<template v-for="test in tests">
+    	<input type="checkbox" v-bind:value="test" v-model="selectedTests" v-on:click="tt">
+    	
+	</template>
+	 
+	<ul>
+    	<li v-for="test in selectedTests">12</li>
+	</ul>
+</div>
+<script src="https://unpkg.com/vue"></script>
+<script>
+	var app = new Vue({
+    	el: '#app',
+    	data: {
+        	tests:[
+            
+            'test1','test2','test3'
+            
+          ],
+          selectedTests:[]
+    	},
+	methods: {
+        tt: function(){
+            this.hide = !this.hide
+        }}
+  });
+</script>
+</body>
+</html>

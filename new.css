@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.button1{
+float:left;
+display:flex;
+ width:250px;
+ height:35px;
+ border:none;
+ justify-content:space-around;
+}
+.logo{
+	
+	display:flex;
+	width:50%;
+	height:25px;
+	justify-content:space-around;
+    float:left;
+}
+.button2{
+	float:right;
+	display:flex;
+ width:250px;
+ height:35px;
+ border:none;
+ justify-content:space-around;
+
+}
+.text1{
+padding-top:100px;
+width:100px;
+height:100px;
+position:absolute;
+
+
+}
+.p1{
+	height:30px;
+	width:300px;
+	font-family:'New Tegomin', sans-serif;
+	font-size:30px;
+	
+}
+.p2{padding-top:10px;
+        height:20px;
+		width:250px;
+		font-family:'Quicksand',sans-serif;
+		font-size:15px;
+		}
+.bt1{
+	
+	font-family:'New Tegomin', sans-serif;
+	font-size:7px;
+	background-color:white;
+	border:1px solid black;
+}
+.p3{
+	display:flex;
+	justify-content:center;
+	
+}
